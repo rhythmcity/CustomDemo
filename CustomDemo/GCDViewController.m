@@ -79,12 +79,7 @@ int (^fail) (int c , int d);
 //    };
 //    NSLog(@"before myblocks");
 //    myblocks();
-//    __block int sum = 0;
-//    int (^myblocks3) (int a, int b) = ^(int a, int b) {
-//        sum = a + b;
-//        return sum;
-//    };
-//    myblocks3(20, 30);
+ //    myblocks3(20, 30);
 //    NSLog(@"sum is %d", sum);
 
     [self getnum:0 succeed:^(int a, int b) {
@@ -95,7 +90,7 @@ int (^fail) (int c , int d);
 //    [self getnum:^(int a, int b) {
 //        NSLog(@"%d%d",a,b);
 //    }];
-    NSLog(@"dasfasdfa");
+    NSLog(@"dasdsfasdffasdfa");
 //    dispatch_queue_t grounpBack= dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 //    dispatch_async(grounpBack, ^{
 //        NSURL * URL=[NSURL URLWithString:@"http://avatar.csdn.net/2/C/D/1_totogo2010.jpg"];
