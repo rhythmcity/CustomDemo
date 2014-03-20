@@ -71,6 +71,7 @@
 
 - (IBAction)btn_click:(id)sender {
     dispatch_queue_t mian=dispatch_queue_create("123123", DISPATCH_QUEUE_CONCURRENT);
+  
     dispatch_async(mian, ^{
         NSLog(@"1");
     });
@@ -96,7 +97,7 @@
     dispatch_async(mian, ^{
         NSLog(@"7");
     });
-////   
+////
 // //  int (^myblocks) (int a ,int b ) = NULL;
 ////    myblocks = ^(void) {
 ////        NSLog(@"in blocks");
@@ -115,17 +116,30 @@
 ////        NSLog(@"%d%d",a,b);
 ////    }];
 //    NSLog(@"dasdsfasdffasdfa");
-////    dispatch_queue_t grounpBack= dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-////    dispatch_async(grounpBack, ^{
-////        NSURL * URL=[NSURL URLWithString:@"http://avatar.csdn.net/2/C/D/1_totogo2010.jpg"];
-////        NSData * DATA=[[NSData alloc]initWithContentsOfURL:URL];
-////        UIImage * image=[[UIImage alloc]initWithData:DATA];
-////        if (!DATA) {
-////        
-////            self.imageView.image=image;
-////        }
-////       // [self request];
-////    
-////    });
+//    dispatch_queue_t grounpBack= dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSURL * URL=[NSURL URLWithString:@"http://avatar.csdn.net/2/C/D/1_totogo2010.jpg"];
+        NSData * DATA=[[NSData alloc]initWithContentsOfURL:URL];
+        UIImage * image=[[UIImage alloc]initWithData:DATA];
+        dispatch_barrier_async(dispatch_get_main_queue(), ^{
+           
+            if (DATA) {
+                
+                self.imageView.image=image;
+            }
+
+        });
+    });
+//    dispatch_async(grounpBack, ^{
+//        NSURL * URL=[NSURL URLWithString:@"http://avatar.csdn.net/2/C/D/1_totogo2010.jpg"];
+//        NSData * DATA=[[NSData alloc]initWithContentsOfURL:URL];
+//        UIImage * image=[[UIImage alloc]initWithData:DATA];
+//        if (!DATA) {
+//        
+//            self.imageView.image=image;
+//        }
+//       // [self request];
+//    
+//    });
 }
 @end
