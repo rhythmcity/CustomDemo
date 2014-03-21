@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GCDViewController.h"
+#import "CarmeViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -17,7 +18,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     GCDViewController *gcd=[[GCDViewController alloc] initWithNibName:@"GCDViewController" bundle:nil];
-    self.window.rootViewController=gcd;
+    CarmeViewController *carme=[[CarmeViewController alloc]initWithNibName:@"CarmeViewController" bundle:nil];
+    self.window.rootViewController=carme;
   
     return YES;
 }

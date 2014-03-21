@@ -35,6 +35,9 @@
 		BADC870A18D81119003A6EA4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADC870918D81119003A6EA4 /* MobileCoreServices.framework */; };
 		BADC870C18D81121003A6EA4 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BADC870B18D81121003A6EA4 /* libz.1.1.3.dylib */; };
 		BADC870E18D81135003A6EA4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADC870D18D81135003A6EA4 /* SystemConfiguration.framework */; };
+		BADD42D018DBE21400C85671 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADD42CF18DBE21400C85671 /* AVFoundation.framework */; };
+		BADD42D418DBE34100C85671 /* CarmeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADD42D218DBE34100C85671 /* CarmeViewController.m */; };
+		BADD42D518DBE34100C85671 /* CarmeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADD42D318DBE34100C85671 /* CarmeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +98,10 @@
 		BADC870918D81119003A6EA4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		BADC870B18D81121003A6EA4 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		BADC870D18D81135003A6EA4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BADD42CF18DBE21400C85671 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BADD42D118DBE34100C85671 /* CarmeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarmeViewController.h; sourceTree = "<group>"; };
+		BADD42D218DBE34100C85671 /* CarmeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarmeViewController.m; sourceTree = "<group>"; };
+		BADD42D318DBE34100C85671 /* CarmeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarmeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADD42D018DBE21400C85671 /* AVFoundation.framework in Frameworks */,
 				BADC870E18D81135003A6EA4 /* SystemConfiguration.framework in Frameworks */,
 				BADC870C18D81121003A6EA4 /* libz.1.1.3.dylib in Frameworks */,
 				BADC870A18D81119003A6EA4 /* MobileCoreServices.framework in Frameworks */,
@@ -147,6 +155,7 @@
 		BADC867418D7F864003A6EA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BADD42CF18DBE21400C85671 /* AVFoundation.framework */,
 				BADC870D18D81135003A6EA4 /* SystemConfiguration.framework */,
 				BADC870B18D81121003A6EA4 /* libz.1.1.3.dylib */,
 				BADC870918D81119003A6EA4 /* MobileCoreServices.framework */,
@@ -168,6 +177,9 @@
 				BADC86A418D8103E003A6EA4 /* GCDViewController.h */,
 				BADC86A518D8103E003A6EA4 /* GCDViewController.m */,
 				BADC86A618D8103E003A6EA4 /* GCDViewController.xib */,
+				BADD42D118DBE34100C85671 /* CarmeViewController.h */,
+				BADD42D218DBE34100C85671 /* CarmeViewController.m */,
+				BADD42D318DBE34100C85671 /* CarmeViewController.xib */,
 				BADC868718D7F864003A6EA4 /* Images.xcassets */,
 				BADC867C18D7F864003A6EA4 /* Supporting Files */,
 			);
@@ -336,6 +348,7 @@
 				BADC86A818D8103E003A6EA4 /* GCDViewController.xib in Resources */,
 				BADC868018D7F864003A6EA4 /* InfoPlist.strings in Resources */,
 				BADC868818D7F864003A6EA4 /* Images.xcassets in Resources */,
+				BADD42D518DBE34100C85671 /* CarmeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADC870118D810B5003A6EA4 /* Reachability.m in Sources */,
+				BADD42D418DBE34100C85671 /* CarmeViewController.m in Sources */,
 				BADC86F918D810B5003A6EA4 /* ASIDataCompressor.m in Sources */,
 				BADC868618D7F864003A6EA4 /* AppDelegate.m in Sources */,
 				BADC870018D810B5003A6EA4 /* JSONKit.m in Sources */,
@@ -486,6 +500,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomDemo/CustomDemo-Prefix.pch";
 				INFOPLIST_FILE = "CustomDemo/CustomDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -499,6 +514,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomDemo/CustomDemo-Prefix.pch";
 				INFOPLIST_FILE = "CustomDemo/CustomDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -563,6 +579,7 @@
 				BADC86A018D7F864003A6EA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BADC86A118D7F864003A6EA4 /* Build configuration list for PBXNativeTarget "CustomDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +588,7 @@
 				BADC86A318D7F864003A6EA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
