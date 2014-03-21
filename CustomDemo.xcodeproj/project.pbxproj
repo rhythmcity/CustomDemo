@@ -38,6 +38,7 @@
 		BADD42D018DBE21400C85671 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADD42CF18DBE21400C85671 /* AVFoundation.framework */; };
 		BADD42D418DBE34100C85671 /* CarmeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADD42D218DBE34100C85671 /* CarmeViewController.m */; };
 		BADD42D518DBE34100C85671 /* CarmeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADD42D318DBE34100C85671 /* CarmeViewController.xib */; };
+		BADD42D718DBF10F00C85671 /* Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BADD42D618DBF10F00C85671 /* Icon.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		BADD42D118DBE34100C85671 /* CarmeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarmeViewController.h; sourceTree = "<group>"; };
 		BADD42D218DBE34100C85671 /* CarmeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarmeViewController.m; sourceTree = "<group>"; };
 		BADD42D318DBE34100C85671 /* CarmeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarmeViewController.xib; sourceTree = "<group>"; };
+		BADD42D618DBF10F00C85671 /* Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Icon.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		BADC867C18D7F864003A6EA4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BADD42D618DBF10F00C85671 /* Icon.jpg */,
 				BADC867D18D7F864003A6EA4 /* CustomDemo-Info.plist */,
 				BADC867E18D7F864003A6EA4 /* InfoPlist.strings */,
 				BADC868118D7F864003A6EA4 /* main.m */,
@@ -347,6 +350,7 @@
 			files = (
 				BADC86A818D8103E003A6EA4 /* GCDViewController.xib in Resources */,
 				BADC868018D7F864003A6EA4 /* InfoPlist.strings in Resources */,
+				BADD42D718DBF10F00C85671 /* Icon.jpg in Resources */,
 				BADC868818D7F864003A6EA4 /* Images.xcassets in Resources */,
 				BADD42D518DBE34100C85671 /* CarmeViewController.xib in Resources */,
 			);
