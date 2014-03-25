@@ -35,5 +35,37 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <tabBarController definesPresentationContext="YES" id="q8e-2p-GhK">
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <tabBar key="tabBar" contentMode="scaleToFill" id="LaB-Rz-wub">
+                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tabBar>
+            <viewControllers>
+                <viewController id="gdt-2p-Kte">
+                    <tabBarItem key="tabBarItem" title="dsfasadf" id="4r8-eU-xZn">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="8" vertical="-3"/>
+                    </tabBarItem>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <nil key="simulatedDestinationMetrics"/>
+                </viewController>
+                <viewController id="Zcw-W5-H6q">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="CM0-Ny-t9X"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <nil key="simulatedDestinationMetrics"/>
+                </viewController>
+            </viewControllers>
+        </tabBarController>
     </objects>
 </document>
