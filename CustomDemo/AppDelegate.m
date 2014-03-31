@@ -18,8 +18,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     GCDViewController *gcd=[[GCDViewController alloc] initWithNibName:@"GCDViewController" bundle:nil];
-    CarmeViewController *carme=[[CarmeViewController alloc]initWithNibName:@"CarmeViewController" bundle:nil];
-    self.window.rootViewController=carme;
+//    CarmeViewController *carme=[[CarmeViewController alloc]initWithNibName:@"CarmeViewController" bundle:nil];
+    self.window.rootViewController=gcd;
   
     return YES;
 }

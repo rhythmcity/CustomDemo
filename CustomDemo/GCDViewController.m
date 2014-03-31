@@ -47,7 +47,44 @@
         default:
             break;
     }
- 
+
+    [self loadDetail];
+}
+//-(void)numwithint:(int)num andstringwth:(NSString *)string andfloatwith:(float)floatnum{
+//    NSLog(@"%d,%@,%f",num,string,floatnum);
+//
+//}
+-(void)loadDetail{
+    request=[ASIFormDataRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://192.168.1.15/mapi.php/Api/index"]]];
+    [request setDelegate:self];
+    request.requestMethod=@"GET";
+    [request setDidFailSelector:@selector(requestFailed:)];
+    [request setDidFinishSelector:@selector(requestFinished:)];
+    [request startAsynchronous];
+
+   
+
+}
+-(void)requestFinished:(ASIHTTPRequest *)requests
+{
+  //  NSLog(@"%@",request.responseString);
+    NSDictionary *dic=[requests.responseString objectFromJSONStringWithParseOptions:JKParseOptionValidFlags error:nil];
+    
+    NSArray *array=[dic objectForKey:@"content"];
+    NSLog(@"%@",array);
+    for (int i =0; i<[array count]; i++) {
+        UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0+100*i, 320, 100)];
+        UILabel *label=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+       // [label sizeToFit];
+        label.lineBreakMode=NSLineBreakByWordWrapping;
+        label.numberOfLines=0;
+        UIImageView *image=[[UIImageView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)];
+        label.text=[[array objectAtIndex:i] objectForKey:@"text"];
+        image.image=[UIImage imageNamed:@"Icon.jpg"];
+        [view addSubview:label];
+        [view addSubview:image];
+        [self.view addSubview:view];
+    }
 
 }
 
