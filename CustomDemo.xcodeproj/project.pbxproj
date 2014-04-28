@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA7758D2190C1F75004FFA95 /* carme.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7758D1190C1F75004FFA95 /* carme.m */; };
 		BADC867618D7F864003A6EA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADC867518D7F864003A6EA4 /* Foundation.framework */; };
 		BADC867818D7F864003A6EA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADC867718D7F864003A6EA4 /* CoreGraphics.framework */; };
 		BADC867A18D7F864003A6EA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADC867918D7F864003A6EA4 /* UIKit.framework */; };
@@ -36,7 +37,7 @@
 		BADC870C18D81121003A6EA4 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BADC870B18D81121003A6EA4 /* libz.1.1.3.dylib */; };
 		BADC870E18D81135003A6EA4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADC870D18D81135003A6EA4 /* SystemConfiguration.framework */; };
 		BADD42D018DBE21400C85671 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADD42CF18DBE21400C85671 /* AVFoundation.framework */; };
-		BADD42D418DBE34100C85671 /* CarmeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADD42D218DBE34100C85671 /* CarmeViewController.m */; };
+		BADD42D418DBE34100C85671 /* CarmeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADD42D218DBE34100C85671 /* CarmeViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BADD42D518DBE34100C85671 /* CarmeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADD42D318DBE34100C85671 /* CarmeViewController.xib */; };
 		BADD42D718DBF10F00C85671 /* Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BADD42D618DBF10F00C85671 /* Icon.jpg */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA7758D0190C1F75004FFA95 /* carme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = carme.h; sourceTree = "<group>"; };
+		BA7758D1190C1F75004FFA95 /* carme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = carme.m; sourceTree = "<group>"; };
 		BADC867218D7F864003A6EA4 /* CustomDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADC867518D7F864003A6EA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BADC867718D7F864003A6EA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -182,6 +185,8 @@
 				BADD42D118DBE34100C85671 /* CarmeViewController.h */,
 				BADD42D218DBE34100C85671 /* CarmeViewController.m */,
 				BADD42D318DBE34100C85671 /* CarmeViewController.xib */,
+				BA7758D0190C1F75004FFA95 /* carme.h */,
+				BA7758D1190C1F75004FFA95 /* carme.m */,
 				BADC868718D7F864003A6EA4 /* Images.xcassets */,
 				BADC867C18D7F864003A6EA4 /* Supporting Files */,
 			);
@@ -380,6 +385,7 @@
 				BADC86F818D810B5003A6EA4 /* ASIAuthenticationDialog.m in Sources */,
 				BADC86FC18D810B5003A6EA4 /* ASIFormDataRequest.m in Sources */,
 				BADC86A718D8103E003A6EA4 /* GCDViewController.m in Sources */,
+				BA7758D2190C1F75004FFA95 /* carme.m in Sources */,
 				BADC86FE18D810B5003A6EA4 /* ASIInputStream.m in Sources */,
 				BADC868218D7F864003A6EA4 /* main.m in Sources */,
 				BADC86FF18D810B5003A6EA4 /* ASINetworkQueue.m in Sources */,

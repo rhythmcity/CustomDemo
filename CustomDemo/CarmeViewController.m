@@ -66,4 +66,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc
+{
+    
+    NSLog(@"%@",self.delegate);
+    [self.delegate release];
+    NSLog(@"carmeDealloc");
+    [super dealloc];
+    
+}
 @end

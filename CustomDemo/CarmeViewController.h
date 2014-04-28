@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@protocol text <NSObject>
+-(void)to;
+@end
 @interface CarmeViewController : UIViewController
+@property (nonatomic, retain)id<text>delegate;
 
 @end

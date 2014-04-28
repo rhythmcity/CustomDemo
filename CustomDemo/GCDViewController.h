@@ -12,7 +12,8 @@
 #import "JSONKit.h"
 #import "ASINetworkQueue.h"
 #import "ASIFormDataRequest.h"
-@interface GCDViewController : UIViewController<ASIHTTPRequestDelegate>
+#import "CarmeViewController.h"
+@interface GCDViewController : UIViewController<ASIHTTPRequestDelegate,text>
 {
     ASIFormDataRequest *request;
 
